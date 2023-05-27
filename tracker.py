@@ -59,7 +59,7 @@ class MedianTracker:
         self.max_dist = max_dist
         self.min_obj_ticks = min_obj_ticks
 
-    def update(self, frame, upd_points: list[float]) -> None:
+    def update(self, frame, upd_points: list[Vector]) -> None:
         self.tick += 1
         new_objects: list[DetObject] = []
 
